@@ -1,2 +1,8 @@
 # Website03
-test for gitignore
+my sample test web site
+
+* first step
+* second step
+* thrid step
+
+
