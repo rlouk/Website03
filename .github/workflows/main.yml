@@ -9,7 +9,7 @@ jobs:
     - name: environment-variable
       run: set
     - name: Python
-      run: Python 3.10.6
+      run: python3 --version
     - name: my-step
       run: echo "Hello World"
     
