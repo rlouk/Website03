@@ -4,7 +4,7 @@ on: push
 
 jobs:
   my-job:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - name: environment-variable
       run: Get-Variable -ValueOnly
