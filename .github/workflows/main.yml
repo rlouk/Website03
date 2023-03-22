@@ -4,8 +4,12 @@ on: push
 
 jobs:
   my-job:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-    - name: my step
+    - name: environment-variable
+      run: set
+    - name: Python
+      run: Python 3.10.6
+    - name: my-step
       run: echo "Hello World"
     
