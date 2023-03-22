@@ -7,7 +7,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: environment-variable
-      run: set
+      run: Get-Variable -ValueOnly
     - name: Python
       run: python3 --version
     - name: my-step
