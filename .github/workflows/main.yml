@@ -4,6 +4,6 @@ jobs:
   my-job:
     runs-on: self-hosted
     steps:
-      - name: Docker
-        run: docker version 
+      - name: check versions
+        run: java -version 
     
