@@ -1,11 +1,8 @@
 name: Build
-
 on:
   push:
     branches:
       - main
-
-
 jobs:
   build:
     name: Build
@@ -13,12 +10,9 @@ jobs:
     steps:
       - name: Checkout code 
         uses: actions/checkout@v3
-      - name: Clean
-        continue-on-error: true
-        run: docker stop website03 && docker rm website03 && docker rmi rlouk/website03
-      - name: Build Image 
-        run: docker build -t rlouk/website03 .
       - name: kube-deploy
-        run: kubectl apply -f deployment.yaml
+        run: kubectl apply -f website-deploy.yaml
       - name: list deployments
         run: kubectl get deployments
+      - name: list services
+        run: kubectl get services
