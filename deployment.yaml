@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rlouk-deployment
+  labels:
+    app: rlouk
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rlouk
+  template:
+    metadata:
+      labels:
+        app: rlouk
+    spec:
+      containers:
+      - name: web
+        image: rlouk/Website03
+        ports:
+        - containerPort: 80
