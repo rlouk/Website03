@@ -29,6 +29,6 @@ spec:
     spec:
       containers:
       - name: web
-        image: rlouk/frozenyogurtshop
+        image: jaibw/frozenyogurtshop
         ports:
         - containerPort: 80
