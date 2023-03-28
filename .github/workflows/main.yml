@@ -1,5 +1,6 @@
-name: hello-world
+name: Build
 on: push
+  
 jobs:
   my-job:
     runs-on: self-hosted
