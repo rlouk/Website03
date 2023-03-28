@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: web
-        image: rlouk/Website03
+        image: rlouk/website03
         ports:
         - containerPort: 80
