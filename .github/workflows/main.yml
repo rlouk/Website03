@@ -15,9 +15,9 @@ jobs:
         uses: actions/checkout@v3
       - name: Clean
         continue-on-error: true
-        run: docker stop Website03 && docker rm Website03 && docker rmi rlouk/Website03
+        run: docker stop website03 && docker rm website03 && docker rmi rlouk/website03
       - name: Build Image 
-        run: docker build -t rlouk/Website03 .
+        run: docker build -t rlouk/website03 .
       - name: kube-deploy
         run: kubectl apply -f deployment.yaml
       - name: list deployments
